@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="z-3 position-absolute p-5 rounded-3"><span>z-3</span></div>
+    <div class="z-2 position-absolute p-5 rounded-3"><span>z-2</span></div>
+     
+
+    <div class="z-1 position-absolute p-5 rounded-3"><span>z-1</span></div>
+    <div class="z-0 position-absolute p-5 rounded-3"><span>z-0</span></div>
+    <div class="z-n1 position-absolute p-5 rounded-3"><span>z-n1</span></div>
+     
+
+    <script>
+      // variable
+      var x = 2;
+      var y = 5;
+      document.write(x + y);
+
+      // object
+      var a = {
+        name: "Nafiz",
+        city: "Rajshahi",
+      };
+      document.write("<br>");
+
+      var b = ["Raj", "Dhaka", "London"];
+      document.write(a.name + "<br>");
+      document.write(b.join(", ") + "<br>"); // Using join for better readability
+
+      // if else
+      var mark = 50;
+      if (mark > 50) {
+        document.write("Very good");
+      } else if (mark < 50) {
+        document.write("Very bad");
+      } else {
+        document.write("Why you come here");
+      }
+
+      document.write("<br><br>");
+
+      // switch
+      switch (true) {
+        case mark >= 80 && mark <= 100:
+          document.write("A+");
+          break;
+        case mark >= 70 && mark <= 80:
+          document.write("A");
+          break;
+        case mark >= 60 && mark <= 70:
+          document.write("A-");
+          break;
+        case mark >= 50 && mark <= 60:
+          document.write("B+");
+          break;
+        default:
+          document.write("Grade not found");
+          break;
+      }
+
+      document.write("<br>");
+
+      // loop
+      for (var i = 0; i < 10; i++) {
+        if (i == 1) {
+          continue; // skips when i == 1
+        }
+        document.write(i + ": <button>For loop</button><br>");
+      }
+
+      document.write("<br>");
+
+      // do-while loop
+      do {
+        document.write(i + ": <button>Do While loop</button><br>");
+        i++;
+      } while (i < 12);
+    </script>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- Move script tag here -->
+  </body>
+</html>
